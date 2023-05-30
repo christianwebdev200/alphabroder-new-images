@@ -6,7 +6,7 @@ const destination = "C:\\images\\alpha\\destination";
 
 let failed = [];
 
-['378_fm.jpg', '481_fm.jpg', '588_fm.jpg', '1588_fm.jpg', '166_fm.jpg'].forEach(item => {
+images.forEach(item => {
   const sourcePath = sources + '\\' + item;
   const destinationPath = destination + '\\' + item
   fs.copyFile(sourcePath, destinationPath, (err) => {
@@ -27,18 +27,3 @@ let failed = [];
 })
 
             
-
-            
-          
-
-          
-
-           
-
-            
-
-           
-
-          
-
-  
